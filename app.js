@@ -1,4 +1,3 @@
-
 // Your web app's Firebase configuration
 var firebaseConfig = {
   apiKey: "AIzaSyB2Ay8XKD7ig3hF4x2uiaUzjkxQQRxIKzY",
@@ -23,7 +22,7 @@ function goToRegisterPage() {
 function goToLoginPage() {
   window.location.href='index.html'
 }
-
+ 
 function register() {
   //get input fields
   UIfirst_name = document.getElementById('first_name').value
@@ -75,6 +74,7 @@ function register() {
   setTimeout(function(){
     window.location.href='page.html'
  }, 2000);
+
 }
 
 function login() {
