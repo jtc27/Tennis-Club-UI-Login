@@ -20,8 +20,7 @@
 | Tool  | Description |
 | ------------- | ------------- |
 |  [Bootstrap](https://getbootstrap.com/)  | Buttons and alerts customized  |
-|  [Firebase](https://firebase.google.com
-)  | Online DB by Google  |
+|  [Firebase](https://firebase.google.com)  | Online DB by Google  |
 
 
 
