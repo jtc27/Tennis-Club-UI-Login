@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Register for Tennis Club!</title>
+  
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="register.css">
+    </head>
+    <body>
+   
+        <div id="content_container">
+            <div id="form_container">
+                <div id="form_header_container">
+                    <h2 id="form_header"> 📖 Register For Tennis Club </h2>
+                </div>
+
+                <div id="form_content_container">
+                    <div id="form_content_inner_container">
+                        <input type="text" id="first_name" placeholder="First name">
+                        <input type="text" id="last_name" placeholder="Last name">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="password" id="password" placeholder="New Password">
+                        <input type="text" id="favorite_song" placeholder="Enter a Song You like">
+      
+                        <div id="button_container">
+                            <button onclick='goToLoginPage()'>Login</button>
+                            <button onclick='register()'>Register</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="app.js"></script>
+
+</html>
