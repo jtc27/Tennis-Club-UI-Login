@@ -1,0 +1,23 @@
+{
+  "name": "tennis-club-ui-login",
+  "version": "1.0.0",
+  "description": "⚡ Javascript UI Login, Authentication.  Upon registration, it takes you to a list of club members.  You can look at their information and rearrange the data table of any column (in ascending or descending order).",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtc27/Tennis-Club-UI-Login.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtc27/Tennis-Club-UI-Login/issues"
+  },
+  "homepage": "https://github.com/jtc27/Tennis-Club-UI-Login#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
