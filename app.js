@@ -73,7 +73,8 @@ function register() {
 
   setTimeout(function(){
     window.location.href='page.html'
- }, 2000);
+  }, 2000);
+  //*** Timeout before page redirection allows Firebase to write data to DB ***//
 
 }
 
@@ -102,15 +103,17 @@ function login() {
     }
 
     database_ref.child('users/' + user.uid).update(user_data)
-    window.location.href='page.html'
   })
   .catch(function(error){
     var error_message = error.message 
     alert(error_message)
   })
 
-}
+  setTimeout(function(){
+    window.location.href='page.html'
+  }, 2000);
 
+}
 
 function validate_email(email) {
   expression = /^[^@]+@\w+(\.\w+)+\w$/ 
