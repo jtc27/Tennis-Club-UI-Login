@@ -1,6 +1,6 @@
 # Tennis-Club-UI-Login
 
-⚡ Javascript UI Login, Authentication.  Upon registration, it takes you to a list of club members.  You can look at their information and rearrange the data table of any column (in ascending or descending order).  DB managed online with Firebase
+⚡ Javascript UI Login, Authentication.  Upon registration, it takes you to a list of club members.  You can look at their information and rearrange the data table of any column (in ascending or descending order).  User database managed online with Firebase
 
 🎾  Try login: ww@star.com <br>
 Password: 111111
