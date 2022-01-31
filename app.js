@@ -1,4 +1,3 @@
-const firebase = require('firebase');
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
