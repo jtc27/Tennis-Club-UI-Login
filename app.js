@@ -74,6 +74,39 @@ function register() {
   setTimeout(function(){
     window.location.href='page.html'
  }, 2000);
+}
+
+function login() {
+  //Get Email, login input fields
+  UIemail = document.getElementById('email').value
+  UIpassword = document.getElementById('password').value
+  const today = new Date()
+
+  if (validate_email(UIemail) == false || validate_password(UIpassword) == false) {
+    alert('Email or password is incorrect')
+    return
+  }
+
+  auth.signInWithEmailAndPassword(UIemail, UIpassword) //promise funct
+  .then(function(){
+    //Declare user variable
+    var user = auth.currentUser
+
+    //add user to firebase db
+    var database_ref = database.ref()
+
+    //create user data
+    var user_data = {
+      last_login: today.toUTCString()
+    }
+
+    database_ref.child('users/' + user.uid).update(user_data)
+    window.location.href='page.html'
+  })
+  .catch(function(error){
+    var error_message = error.message 
+    alert(error_message)
+  })
 
 }
 
